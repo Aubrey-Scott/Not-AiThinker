@@ -27,8 +27,12 @@ class UI(QMainWindow):
         # Load the ui file
         uic.loadUi("gui\\notAiThinkerGUI.ui", self)
 
-        
-        # Define Widgets
+        Path("training").mkdir(exist_ok=True)
+        Path("output").mkdir(exist_ok=True)
+        Path("validation").mkdir(exist_ok=True)
+        Path("unknown").mkdir(exist_ok=True)
+
+         # Define Widgets
         self.buttonValidate = self.findChild(QPushButton, "pushButton")
         self.buttonImages = self.findChild(QPushButton, "pushButton_2")
         self.buttonRecognize = self.findChild(QPushButton, "pushButton_3")
