@@ -3,12 +3,6 @@ Facial recognition program with GUI using the facial recognition library!
 
 How to use:
 
-Inside of the project folder create the follow directories:
--output
--training
--validation
--unknown
-
 Through the program's GUI you can add images to the training directory, simply place images inside of a folder named after the person in the images, in the directory.
 
 Using the "encode" function on the GUI will create a pickle file in the output directory containing information used to show the location of faces when presented in the GUI.
